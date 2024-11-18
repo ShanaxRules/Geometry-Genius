@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/pentagon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Geometry Genius</title>
+</head>
+
+<body class="mx-6 my-3">
+
+    <nav class="mb-24">
+        <div
+            class="bg-blue-100 flex flex-row justify-between items-center lg:px-5 lg:py-2 md:px-4 md:py-2 px-4 py-2 rounded-2xl">
+            <div>
+                <h1 class="lg:text-2xl md:text-xl text-lg font-bold text-red-600">Shan's<br><span
+                        class="text-gray-600 lg:text-lg md:text-lg text-sm">Geometry
+                        Genius</span></h1>
+            </div>
+
+            <div>
+                <button class=" bg-blue-500 rounded-2xl">
+                    <h1 class="text-white font-bold lg:mx-6 lg:my-1 md:mx-5 md:my-1 mx-3 my-1">Blog</h1>
+                </button>
+            </div>
+
+        </div>
+
+
+    </nav>
+
+    <section class="flex flex-col lg:flex-row md:flex-col gap-x-2 justify-between" id="main">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4">
+
+            <!-- first card -->
+            <div class="card bg-base-100 w-full border-2 border-gray-200 py-3 mb-5 h-[580px] animeter-1" id="bindu-1">
+                <figure class="px-2 pt-10 mb-5">
+                    <img src="images/triangle.png" alt="Shoes" class="rounded-xl w-[400px] h-[196px]" />
+                </figure>
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-black mb-2">Triangle</h2>
+                    <p class="mb-4">Area(A)= 0.5*b*h</p>
+                    <div class="mb-4 flex gap-x-1 justify-center items-center flex-col md:flex-row lg:flex-row gap-y-4">
+                        <div>
+                            <input class="bg-gray-200 p-2  md:w-1/2 w-full" type="text" name="" id="b1" placeholder="b">
+                            cm
+                        </div>
+                        <div>
+                            <input class="bg-gray-200 p-2 lg:w-1/2 md:w-1/2 w-full" type="text" name="" id="h1"
+                                placeholder="h"> cm
+                        </div>
+
+
+
+                    </div>
+                    <div class=" px-3">
+                        <button class="px-5 py-3 rounded-xl text-white bg-blue-800 w-full" id="triangle-button">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- second card -->
+            <div class="card bg-base-100 w-full border-2 border-gray-200 py-3 mb-5 h-[580px] animeter-1" id="bindu-2">
+                <figure class="px-10 pt-10 mb-5">
+                    <img src="images/rectangle.png" alt="Shoes" class="rounded-xl w-[400px] h-[196px]" />
+                </figure>
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-black mb-2">Rectangle</h2>
+                    <p class="mb-4">Area(A)= w*h</p>
+                    <div class="mb-4 flex gap-x-3 justify-center items-center flex-col md:flex-row lg:flex-row gap-y-4">
+                        <div>
+                            <input class="bg-gray-200 p-2 lg:w-1/2 md:w-1/2 w-full" type="text" name="" id="h2"
+                                placeholder="w"> cm
+                        </div>
+                        <div>
+                            <input class="bg-gray-200 p-2 lg:w-1/2 md:w-1/2 w-full" type="text" name="" id="b2"
+                                placeholder="h"> cm
+                        </div>
+
+
+
+                    </div>
+                    <div class=" px-3">
+                        <button class="px-5 py-3 rounded-xl text-white bg-blue-800 w-full" id="rectangle-button">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- third card -->
+            <div class="card bg-base-100 w-full border-2 border-gray-200 py-3 mb-5 h-[580px] animeter-1" id="bindu-3">
+                <figure class="px-10 pt-10 mb-5">
+                    <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl w-[400px] h-[196px]" />
+                </figure>
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-black mb-2">Parallelogram</h2>
+                    <p class="mb-4">Area(A)= b*h</p>
+                    <div class="mb-4 flex gap-x-3 justify-center items-center flex-col md:flex-row lg:flex-row gap-y-4">
+                        <div>
+                            <input class="bg-gray-200 p-2 lg:w-1/2 md:w-1/2 w-full" type="text" name="" id="h3"
+                                placeholder="b"> cm
+                        </div>
+                        <div>
+                            <input class="bg-gray-200 p-2 lg:w-1/2 md:w-1/2 w-full" type="text" name="" id="b3"
+                                placeholder="h"> cm
+                        </div>
+
+
+
+                    </div>
+
+                    <div class=" px-3">
+                        <button class="px-5 py-3 rounded-xl text-white bg-blue-800 w-full" id="parallel-button">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- result card -->
+            <div
+                class="border-2 border-gray-200 rounded-2xl p-3 row-span-2 md:col-span-2 lg:col-span-1 lg:order-none md:order-last order-last h-auto animeter-2" id="answer-div">
+                <h1 class="text-xl text-black font-bold text-center underline decoration-solid">Results of Calculation
+                </h1>
+                <ul id="answer-ul">
+                    <!-- JS applied here -->
+                </ul>
+            </div>
+            <!-- fifth card -->
+            <div class="card bg-base-100 w-full border-2 border-gray-200 py-3 mb-5 h-[580px] animeter-1" id="bindu-4">
+                <figure class="px-10 pt-10 mb-5">
+                    <img src="images/rhombus.png" alt="Shoes" class="rounded-xl w-[400px] h-[196px]" />
+                </figure>
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-black mb-2">Rhombus</h2>
+                    <p class="mb-4">Area(A)= 0.5*d1*d2</p>
+                    <div class="mb-4 flex gap-x-3 justify-center items-center flex-col md:flex-row lg:flex-row gap-y-4">
+                        <div>
+                            <input class="bg-gray-200 p-2 lg:w-1/2 md:w-1/2 w-full" type="text" name="" id="h4"
+                                placeholder="d1"> cm
+                        </div>
+                        <div>
+                            <input class="bg-gray-200 p-2 lg:w-1/2 md:w-1/2 w-full" type="text" name="" id="b4"
+                                placeholder="d2"> cm
+                        </div>
+
+
+
+                    </div>
+                    <div class=" px-3">
+                        <button class="px-5 py-3 rounded-xl text-white bg-blue-800 w-full" id="rhombus-button">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- sixth card -->
+            <div class="card bg-base-100 w-full border-2 border-gray-200 py-3 mb-5 h-[580px] animeter-1" id="bindu-5">
+                <figure class="px-10 pt-10 mb-5">
+                    <img src="images/pentagon.png" alt="Shoes" class="rounded-xl w-[400px] h-[196px]" />
+                </figure>
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-black mb-2">Pentagon</h2>
+                    <p class="mb-4">Area(A)= 0.5*p*b</p>
+                    <div class="mb-4 flex gap-x-3 justify-center items-center flex-col md:flex-row lg:flex-row gap-y-4">
+                        <div>
+                            <input class="bg-gray-200 p-2 lg:w-1/2 md:w-1/2 w-full" type="text" name="" id="h5"
+                                placeholder="p"> cm
+                        </div>
+                        <div>
+                            <input class="bg-gray-200 p-2 lg:w-1/2 md:w-1/2 w-full" type="text" name="" id="b5"
+                                placeholder="b"> cm
+                        </div>
+
+
+
+                    </div>
+                    <div class=" px-3">
+                        <button class="px-5 py-3 rounded-xl text-white bg-blue-800 w-full" id="penta-button">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <!-- seventh card -->
+            <div class="card bg-base-100 w-full border-2 border-gray-200 py-3 mb-5 h-[580px] animeter-1" id="bindu-6">
+                <figure class="px-10 pt-10 mb-5">
+                    <img src="images/ellipse.png" alt="Shoes" class="rounded-xl w-[400px] h-[196px]" />
+                </figure>
+                <div class="text-center">
+                    <h2 class="text-2xl font-bold text-black mb-2">Ellipse</h2>
+                    <p class="mb-4">Area(A)= Π*a*b</p>
+                    <div class="mb-4 flex gap-x-3 justify-center items-center flex-col md:flex-row lg:flex-row gap-y-4">
+                        <div>
+                            <input class="bg-gray-200 p-2 lg:w-1/2 md:w-1/2 w-full" type="text" name="" id="h6"
+                                placeholder="b"> cm
+                        </div>
+                        <div>
+                            <input class="bg-gray-200 p-2 lg:w-1/2 md:w-1/2 w-full" type="text" name="" id="b6"
+                                placeholder="h"> cm
+                        </div>
+
+
+
+                    </div>
+                    <div class=" px-3">
+                        <button class="px-5 py-3 rounded-xl text-white bg-blue-800 w-full" id="ellipse-btn">Calculate</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+<script src="scrollreveal.min.js"></script>
+<script src="background.js"></script>
+<script src="Calculations.js"></script>
+</body>
+
+</html>
